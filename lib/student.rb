@@ -7,10 +7,9 @@ class Student
    attr_accessor :name, :grade 
    attr_reader :id
  
-  def initialize(name, grade, id=nil)
-    @id = id
-    @name = name
-    @grade = grade
+  def initialize(id=nil, name, grade)
+  #  with DB[:conn]  	    @id, @name, @grade = id, name, grade
+
   end
   
     def self.create_table
