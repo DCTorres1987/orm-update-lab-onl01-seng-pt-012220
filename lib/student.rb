@@ -8,7 +8,8 @@ class Student
    attr_reader :id
  
   def initialize(id=nil, name, grade)
-  #  with DB[:conn]  	    @id, @name, @grade = id, name, grade
+  #  with DB[:conn]  	    
+  @id, @name, @grade = id, name, grade
 
   end
   
